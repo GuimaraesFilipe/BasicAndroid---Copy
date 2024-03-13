@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 6.0.0",
+    "appVersionSource":"remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement":true
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./tribal-mapper-411712-10c8dd19fa9a.json",
+        "track": "internal"
+      }
+    }
+  }
+}

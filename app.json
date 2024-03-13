@@ -1,0 +1,27 @@
+{
+  "name": "LittleLemonDelivery",
+  "displayName": "LittleLemonDelivery",
+  "expo": {
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow LittleLemonDelivery to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c5c9e841-eb61-4414-a751-3f71794aec49"
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.filipefsg.littlelemondelivery"
+    }
+  }
+}
